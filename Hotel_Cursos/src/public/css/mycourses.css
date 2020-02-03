@@ -1,0 +1,38 @@
+#Componentes {
+display: flex;
+overflow: hidden;
+}
+
+/* --DISEÑO DE LAS CARDS */
+.CourseCard{
+    width: 18rem;
+    top: 5em;
+    left: 3em;
+    margin: 1em;
+    background-color: #00447f;
+    color: white;
+}
+.CourseTitle{
+    color: red;
+    position: relative;
+    left: 1em;
+    font-size: calc(11px + 4vmin);
+}
+.CourseButton{
+    width: 100%;
+}
+
+.contentCourses {
+    overflow: auto;
+    box-sizing: border-box;
+
+   
+
+    background-color: white;
+
+    --alturaHeader: 6rem;    
+    --altura: ;
+    width: 100%;
+    height:  calc(var(--altura) - 6rem);
+    
+  }

@@ -1,0 +1,83 @@
+
+.positionForm{
+    left: 10vh;  
+  }
+  .contentNewcourses {
+    overflow: auto;
+    box-sizing: border-box;
+
+    
+    background-color: white;
+    --alturaHeader: 6rem;    
+    --altura: ;
+    width: 100%;
+    height:  calc(var(--altura) - 6rem);
+  }
+
+  /*@media (min-width: 320px){
+    .contentNewcourses {
+        overflow: auto;
+        box-sizing: border-box;
+    
+        min-height: 2em;
+    
+        background-color: white;
+        
+      }
+  }
+  
+  @media (min-width: 360px){
+    .contentNewcourses {
+        overflow: auto;
+        box-sizing: border-box;
+    
+        min-height: 2em;
+    
+        background-color: white;
+        
+      }
+  }
+  @media (min-width: 576px){
+    .contentNewcourses {
+        overflow: auto;
+        box-sizing: border-box;
+    
+        min-height: 2em;
+    
+        background-color: white;
+        
+      }
+  }
+  @media (min-width: 768px){
+    .contentNewcourses {
+        overflow: auto;
+        box-sizing: border-box;
+    
+        min-height: 2em;
+    
+        background-color: white;
+        
+      }
+  }
+  @media (min-width: 992px){
+    .contentNewcourses {
+        overflow: auto;
+        box-sizing: border-box;
+    
+        min-height: 2em;
+    
+        background-color: white;
+        
+      }
+  }
+  @media (min-width: 1200px){
+    .contentNewcourses {
+        overflow: auto;
+        box-sizing: border-box;
+    
+        min-height: 2em;
+    
+        background-color: white;
+        
+      }
+  }*/

@@ -1,0 +1,36 @@
+body,html {
+    /*min-height: 100vh;
+    max-width: 100vw;*/
+
+    /*width: 100%;*/
+    height: 100%;
+    margin: 0;
+    background-color: red;
+    overflow: hidden;
+  }
+
+.root {
+    --landscape-width: 18; /* % OR vw for responsive window resizing!, es el tamaño del sider en width*/
+    --portrait-width: 45vw; /*el tamaño del sider en portrait*/
+    
+    --header-height: 5.5rem; /*altura del content*/
+    --secs: 0.4s;
+    --bg-left: #00447f; /*Color del sidebar*/
+    --bg-main: white; /*Color de las letras*/
+  }
+
+  #main { 
+    background: var(--bg-main); 
+    flex-grow: 1;
+    
+  }
+  /*el header*/
+  .headerContent { 
+    background: linear-gradient(to right, var(--bg-left), var(--bg-right));
+    @media (orientation: landscape) {
+      .title { transition: left var(--secs), right var(--secs);
+        &.left-closed { left: var(--header-height); }
+        &.right-closed { right: var(--header-height); }
+      }
+    }
+  }
