@@ -1,0 +1,93 @@
+<div id="Componentes">
+    <div id="main">
+        {{> navbar}}
+        <div class="contentNewcourses">
+            <a class="CourseTitle">Nuevo Curso</a>
+            <div class="row">
+                <div class="col-md-6 positionForm">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+
+                            <form action="/administrador/nuevo_curso" name="campoProducto" id="campoProducto"
+                                method="post">
+                                <p>
+                                    <br>
+                                </p>
+                                <tr>
+                                    <div class="form-group">
+
+                                        <label>Nombre del curso</label>
+                                        <br>
+                                        <input name="title" type="text" size="64" class="form-control" />
+                                        <p>
+                                            <br>
+                                        </p>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="form-group">
+                                        <label>Categoria</label>
+                                        <br>
+                                        <select name="category" class="form-control">
+                                            <option value="1">Ingles</option>
+                                            <option value="2">Coreano</option>
+                                            <option value="3">Maya</option>
+                                            <option value="4">Señas</option>
+                                        </select>
+                                        <p>
+                                            <br>
+                                        </p>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="form-group">
+                                        <label>Descripcion del curso</label>
+                                        <br>
+                                        <textarea name="description" cols="64" rows="5" class="form-control"></textarea>
+                                        <p>
+                                            <br>
+                                        </p>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="form-group">
+                                        <label>Imagen representativa del curso (NO SIRVE AUN)</label>
+                                        <br>
+                                        <input type="file" name="fileField" id="fileField" />
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <p>
+                                        <br>
+                                    </p>
+                                    <p>
+                                        <br>
+                                    </p>
+                                    <div class="form-group">
+                                        <input style="float:left;" type="reset" value="Limpiar Campos"
+                                            class="btn btn-primary btn-lg">
+                                        <button style="float:right;" class="btn btn-primary btn-lg">Crear</button>
+                                    </div>
+                                    <p>
+                                        <br>
+                                    </p>
+                                    <p>
+                                        <br>
+                                    </p>
+                                </tr>
+
+                            </form>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+               

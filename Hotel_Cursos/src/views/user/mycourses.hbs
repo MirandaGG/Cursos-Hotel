@@ -1,0 +1,25 @@
+<div id="Componentes">
+    <div id="main">
+        {{> navbar}}
+        <div class="contentCourses">
+            <a class="CourseTitle">Mis Cursos</a>
+            <div class="row">
+
+                {{#each mycourses}}
+                <div class="card border-dark CourseCard">
+                    <img class="card-img-top" src="../images/playa-logo.png" alt="Ingles" />
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="card-text">{{description}}</p>
+                        <a href="/Unidad" class="btn btn-lg btn-primary CourseButton">
+                            Entrar
+                        </a>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,70 @@
+<div id="Componentes">
+    <div id="main">
+        {{> navbar}}
+        <div class="contentNewcourses">
+            <a class="CourseTitle">Nuevo Personal</a>
+            <div class="row">
+                <div class="col-md-9 sizeForm">
+                 <div class="card">
+                      <div class="card-body ">
+                            <form action="/administrador/nuevo_personal" name="campoProducto" id="campoProducto"
+                                method="post">
+                                <p>
+                                    <br>
+                                </p>
+                                <tr>
+                                    <div class="form-group" style="padding: 22px;">
+
+                                        <label>Nombre del docente o Numero de asociado</label>
+                                        <br>
+                                        <input name="name_course" type="text" size="64" class="form-control" style="width: 50%;"/>
+                                        <button class="btn btn-primary">Comprovar</button>
+                                        <p>
+                                            <br>
+                                        </p>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="form-group" style="padding: 22px;">
+                                        <label>Categoria del curso</label>
+                                        <br>
+                                        <select name="categoria" id="categoria" class="form-control">
+                                            <option value="1">Ingles</option>
+                                            <option value="2">Equipos de refrigeración industrial</option>
+                                            <option value="3">Unidades y centrales de refrigeración</option>
+                                        </select>
+                                        <p>
+                                            <br>
+                                        </p>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    
+                                    <div class="form-group">
+                                        <input style="float:left;" type="reset" value="Limpiar Campos"
+                                            class="btn btn-primary btn-lg">
+                                        <button style="float:right;" class="btn btn-primary btn-lg">Añadir</button>
+                                    </div>
+                                    <p>
+                                        <br>
+                                    </p>
+                                    <p>
+                                        <br>
+                                    </p>
+                                </tr>
+
+                            </form>
+
+                      </div>
+                 </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+               

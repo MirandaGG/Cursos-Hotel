@@ -1,0 +1,118 @@
+<div id="Componentes">
+    <div id="main">
+        {{> navbar}}
+        <div class="contentNewcourses">
+            <a class="CourseTitle">Administrar Cursos</a>
+
+            {{> messages}}
+
+            <div class="card" style="height: 100%;">
+
+                <h2 style="text-align: center;">Cursos Activos</h2>
+
+                <div class='row'>
+                    {{#each activeCourses}}
+
+                    <div class="card border-dark CourseCard">
+                        <img class="card-img-top" src="../images/playa-logo.png" alt="Ingles" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{title}}</h5>
+                            <p class="card-text">Fecha de creacion: {{timeago created_at}}</p>
+                            <p class="card-text">{{description}}</p>
+                            <button type='button' data-toggle='modal' data-target='#{{id}}'
+                                class="btn btn-danger">Deshabilitar Curso</button>
+                            <a href="/administrador/edit/{{id}}" class="btn btn-primary">Editar</a>
+                            <a href="" class="btn btn-primary">Unidades</a>
+
+                            <!-- cuadro del aviso -->
+                            <div class='modal fade' id={{id}} role='dialog'>
+                                <div class='modal-dialog'>
+
+                                    <!-- contenido del cuadro-->
+                                    <div class='modal-content' style="color: black;">
+                                        <div class='modal-header'>
+
+                                            <h4 class='modal-title'>Curso : {{title}}</h4>
+                                        </div>
+                                        <div class='modal-body'>
+                                            <p>Desea deshabilitar el siguiente curso: {{title}} ?</p>
+                                            <p>Una vez deshabilitado se puede volver a activar</p>
+                                        </div>
+                                        <div class='modal-footer'>
+                                            <a class='btn btn-danger' href="/administrador/disable/{{id}}">Aceptar</a>
+                                            <button type='button' class='btn btn-primary'
+                                                data-dismiss='modal'>CANCELAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    {{else}}
+                    <h4>NO SE ENCUENTRA NINGUN CURSO ACTIVO</h4>
+                    {{/each}}
+                </div>
+
+
+            </div>
+
+            <div class="card" style="height: 100%;">
+
+                <h2 style="text-align: center;">Cursos Inactivos</h2>
+
+                <div class='row'>
+                    {{#each disableCourses}}
+
+                    <div class="card border-dark CourseCard">
+                        <img class="card-img-top" src="../images/playa-logo.png" alt="Ingles" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{title}}</h5>
+                            <p class="card-text">Fecha de creacion: {{timeago created_at}}</p>
+                            <p class="card-text">{{description}}</p>
+                            <button type='button' data-toggle='modal' data-target='#{{id}}'
+                                class="btn btn-danger">Habilitar Curso</button>
+                            <a href="/administrador/edit/{{id}}" class="btn btn-primary">Editar</a>
+                            <a href="" class="btn btn-primary">Unidades</a>
+
+                            <!-- cuadro del aviso -->
+                            <div class='modal fade' id={{id}} role='dialog'>
+                                <div class='modal-dialog'>
+
+                                    <!-- contenido del cuadro-->
+                                    <div class='modal-content' style="color: black;">
+                                        <div class='modal-header'>
+
+                                            <h4 class='modal-title'>Curso : {{title}}</h4>
+                                        </div>
+                                        <div class='modal-body'>
+                                            <p>Desea habilitar el siguiente curso: {{title}} ?</p>
+                                            <p>Una vez habilitado se puede volver a deshabilitar</p>
+                                        </div>
+                                        <div class='modal-footer'>
+                                            <a class='btn btn-danger' href="/administrador/active/{{id}}">Aceptar</a>
+                                            <button type='button' class='btn btn-primary'
+                                                data-dismiss='modal'>CANCELAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    {{else}}
+                    <h4>NO SE ENCUENTRA NINGUN CURSO DESHABILIDATO</h4>
+                    {{/each}}
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
